@@ -8,9 +8,19 @@
         {
             //  Zadacha1();
             //Zadacha2();
+<<<<<<< HEAD
             Zadacha3();
         }
 
+=======
+            //Zadacha3();
+            Zadacha4();
+        }
+        private static void Zadacha4()
+        {
+            Console.WriteLine();
+        }
+>>>>>>> 44bec8ef082e49f5997624f7e4683a64054f1d31
         private static void Zadacha3()
         {
             Console.Write("Име на филма:");
