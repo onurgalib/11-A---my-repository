@@ -49,4 +49,17 @@
             return result;
         }
     }
+    public class Desk
+    {
+        int weight;
+        public int Weight { get => weight; set => weight = value; }
+        double price;
+        public double Price { get => price; set => price = value; }
+        string material;
+        public string Material { get => material; set => material = value; }
+        string Color;
+        public string Color { get => Color; set => Color = value; }
+        public string Material { get => material; set => material = value; }
+        Console.WriteLine($"Tova byuro tezhi: {Weight}kg, cenata e: {d1.Price}lv, cveta e: {d1.Color}, materialut e: {d1.;
+    }
 }
