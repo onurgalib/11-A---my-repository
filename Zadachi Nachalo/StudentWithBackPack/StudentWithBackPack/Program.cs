@@ -8,6 +8,8 @@ namespace StudentWithBackPack
 {
     internal class Program
     {
+        private static object selectedStudent;
+
         static void Main(string[] args)
         {
             List<Student> students = new List<Student>();
@@ -29,8 +31,35 @@ namespace StudentWithBackPack
                 {
                     break;
                 }
-                Console.WriteLine(new string('=', 20));
+                Console.WriteLine(new string('=', 40));
             }
+            Console.WriteLine(new string('=', 40));
+            Console.WriteLine("Input Grades");
+            Console.WriteLine(new string('=', 20));
+            Console.WriteLine("Choose Student from List: ");
+            for (int i = 0; i < students.Count(); i++)
+            {
+                var current = students[i];
+                Console.WriteLine($"[{i+1}.] {current.Name} {current.FamilyName}. {current.Age} old!");
+            }
+            Console.Write("Choose Student Number OR stop: ");
+            string input = Console.ReadLine();
+            if (input == "stop")
+            {
+                break;
+            }
+            int chosenIndex = int.Parse(input)-1;
+            Student selectionStudent = students[chosenIndex];
+            Console.WriteLine("Inpur grades separated with spaces/ex. 3 5 6 2");
+            string gradesString = Console.ReadLine();
+            var grades = Console.ReadLine().Split(' ').Select(x => int.Parse(x)).ToList();
+            selectedStudent.Grades.AddRange = (grades);
+            foreach (var item in collection)
+            {
+
+            }
+
+
             Student st1 = new Student() { Name = "Gancho", FamilyName = "Petrov", Age = 15 };
             BackPack bp1 = new BackPack() { Volume = 15.6, Color = "Camoflage", Price = 69.75m };
             st1.BackPack = bp1;
@@ -76,6 +105,10 @@ namespace StudentWithBackPack
         {
             //  Console.WriteLine($"I am {Name} and I am {Age} ");
             //  IncreaseAge();
+        }
+        public double GetAverageGrades()
+        {
+            return Grades.Average();
         }
         private void IncreaseAge()
         {
