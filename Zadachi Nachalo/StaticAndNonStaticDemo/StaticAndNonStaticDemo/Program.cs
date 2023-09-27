@@ -1,6 +1,6 @@
 ﻿namespace StaticAndNonStaticDemo
 {
-    internal class Program
+    internal class StaticAndNonStaticDemo
     {
         static void Main()
         {
