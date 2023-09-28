@@ -4,7 +4,7 @@
     {
         private static double favoriteNumber;
 
-        static void Main()
+        static void  Main()
         {
             GetNum("alabala", 6);
             ChangeOil("Ford Focus Gen2");
