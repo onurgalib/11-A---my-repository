@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticConstructorsDestructorsStackAndHeap", "StaticConstructorsDestructorsStackAndHeap\StaticConstructorsDestructorsStackAndHeap.csproj", "{CD59245E-B863-4C40-ACEF-B2AA0609982A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8259D41E-1547-4048-B3BC-B188BB9018A4}"
+	ProjectSection(SolutionItems) = preProject
+		Class1.cs = Class1.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD59245E-B863-4C40-ACEF-B2AA0609982A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD59245E-B863-4C40-ACEF-B2AA0609982A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD59245E-B863-4C40-ACEF-B2AA0609982A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD59245E-B863-4C40-ACEF-B2AA0609982A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {218AC1C4-95EE-40A5-8BEF-3E0D137B129F}
+	EndGlobalSection
+EndGlobal
