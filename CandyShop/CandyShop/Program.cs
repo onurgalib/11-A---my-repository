@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+<<<<<<< HEAD
         public static decimal totalCost { get; private set; }
 
         static void Main(string[] args)
@@ -76,6 +77,10 @@
 
         private static void Demo1()
         {
+=======
+        static void Main(string[] args)
+        {
+>>>>>>> 88c6bc39902c7ac31dec937c4b370065814eedaf
             var Candy = new Candy();
             string nameofCandy = Candy.Name;
             Candy.Calories = 120;
@@ -106,7 +111,11 @@
             }
         }
         public double Weight { get; set; }
+<<<<<<< HEAD
         public decimal PriceUSD
+=======
+        public decimal PriceUSD 
+>>>>>>> 88c6bc39902c7ac31dec937c4b370065814eedaf
         {
             get
             {
@@ -114,9 +123,15 @@
             }
             set
             {
+<<<<<<< HEAD
                 if (value <= 0)
                 {
                     Console.WriteLine("Invalid Price for Candy! 0.5$ is not happy!");
+=======
+                if (value<=0)
+                {
+                    Console.WriteLine( "Invalid Price for Candy! 0.5$ is not happy!");
+>>>>>>> 88c6bc39902c7ac31dec937c4b370065814eedaf
                     priceUSD = 5;
                     return;
                 }
@@ -128,6 +143,7 @@
         private FamilyType famType;
 
         public int Amount { get; set; }
+<<<<<<< HEAD
 
         public bool IsVeganAcceptable { get; set; }
         public FamilyType FamilyType { get; }
@@ -142,6 +158,12 @@
             PriceUSD = decimal.Parse(inputArr[3]);
             FamilyType type = Enum.Parse<FamilyType>(inputArr[4]);
         }
+=======
+  
+        public bool IsVeganAcceptable { get; set; }
+        public FamilyType FamilyType { get; }
+
+>>>>>>> 88c6bc39902c7ac31dec937c4b370065814eedaf
         public Candy(bool isVeganAcceptable = true)
         {
             Amount = 100;
@@ -194,7 +216,11 @@
         }
         public decimal CalculateProfit()
         {
+<<<<<<< HEAD
             return totalSold * PriceUSD;
+=======
+            return totalSold * PriceUSD;        
+>>>>>>> 88c6bc39902c7ac31dec937c4b370065814eedaf
 
         }
 
@@ -204,6 +230,7 @@
     {
         Bonbon,
         Cake,
+<<<<<<< HEAD
         Licorice,
         Pretzels,
         Waffle,
@@ -211,6 +238,8 @@
         FruitPower,
         Snacks,
         Unspecified
+=======
+>>>>>>> 88c6bc39902c7ac31dec937c4b370065814eedaf
 
     }
 }
