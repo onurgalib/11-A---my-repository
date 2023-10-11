@@ -2,10 +2,6 @@
 {
     internal class Program
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 27583611eb37e7639af9e729322da82dc30fb23e
         public static decimal totalCost { get; private set; }
 
         static void Main(string[] args)
@@ -80,13 +76,6 @@
 
         private static void Demo1()
         {
-<<<<<<< HEAD
-=======
-=======
-        static void Main(string[] args)
-        {
->>>>>>> 88c6bc39902c7ac31dec937c4b370065814eedaf
->>>>>>> 27583611eb37e7639af9e729322da82dc30fb23e
             var Candy = new Candy();
             string nameofCandy = Candy.Name;
             Candy.Calories = 120;
@@ -117,15 +106,7 @@
             }
         }
         public double Weight { get; set; }
-<<<<<<< HEAD
         public decimal PriceUSD
-=======
-<<<<<<< HEAD
-        public decimal PriceUSD
-=======
-        public decimal PriceUSD 
->>>>>>> 88c6bc39902c7ac31dec937c4b370065814eedaf
->>>>>>> 27583611eb37e7639af9e729322da82dc30fb23e
         {
             get
             {
@@ -133,21 +114,9 @@
             }
             set
             {
-<<<<<<< HEAD
                 if (value <= 0)
                 {
                     Console.WriteLine("Invalid Price for Candy! 0.5$ is not happy!");
-=======
-<<<<<<< HEAD
-                if (value <= 0)
-                {
-                    Console.WriteLine("Invalid Price for Candy! 0.5$ is not happy!");
-=======
-                if (value<=0)
-                {
-                    Console.WriteLine( "Invalid Price for Candy! 0.5$ is not happy!");
->>>>>>> 88c6bc39902c7ac31dec937c4b370065814eedaf
->>>>>>> 27583611eb37e7639af9e729322da82dc30fb23e
                     priceUSD = 5;
                     return;
                 }
@@ -159,10 +128,6 @@
         private FamilyType famType;
 
         public int Amount { get; set; }
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
 
         public bool IsVeganAcceptable { get; set; }
         public FamilyType FamilyType { get; }
@@ -177,26 +142,6 @@
             PriceUSD = decimal.Parse(inputArr[3]);
             FamilyType type = Enum.Parse<FamilyType>(inputArr[4]);
         }
-=======
-  
->>>>>>> 27583611eb37e7639af9e729322da82dc30fb23e
-        public bool IsVeganAcceptable { get; set; }
-        public FamilyType FamilyType { get; }
-        public object Sold { get; internal set; }
-
-<<<<<<< HEAD
-        public Candy(string input)
-        {
-            var inputArr = input.Split("; ");
-            Name = inputArr[0];
-            Calories = int.Parse(inputArr[1]);
-            Weight = double.Parse(inputArr[2]);
-            PriceUSD = decimal.Parse(inputArr[3]);
-            FamilyType type = Enum.Parse<FamilyType>(inputArr[4]);
-        }
-=======
->>>>>>> 88c6bc39902c7ac31dec937c4b370065814eedaf
->>>>>>> 27583611eb37e7639af9e729322da82dc30fb23e
         public Candy(bool isVeganAcceptable = true)
         {
             Amount = 100;
@@ -249,15 +194,7 @@
         }
         public decimal CalculateProfit()
         {
-<<<<<<< HEAD
             return totalSold * PriceUSD;
-=======
-<<<<<<< HEAD
-            return totalSold * PriceUSD;
-=======
-            return totalSold * PriceUSD;        
->>>>>>> 88c6bc39902c7ac31dec937c4b370065814eedaf
->>>>>>> 27583611eb37e7639af9e729322da82dc30fb23e
 
         }
 
@@ -267,10 +204,6 @@
     {
         Bonbon,
         Cake,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 27583611eb37e7639af9e729322da82dc30fb23e
         Licorice,
         Pretzels,
         Waffle,
@@ -278,11 +211,6 @@
         FruitPower,
         Snacks,
         Unspecified
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 88c6bc39902c7ac31dec937c4b370065814eedaf
->>>>>>> 27583611eb37e7639af9e729322da82dc30fb23e
 
     }
 }
