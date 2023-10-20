@@ -36,7 +36,7 @@ Age int,
 Email nvarchar(32) UNIQUE NOT NULL,
 Proffession nvarchar(32) 
 )
-
+GO
 CREATE TABLE PeopleShops(
 PersonId nvarchar(4) NOT NULL
 CONSTRAINT FK_PeopleShops_People
@@ -66,17 +66,17 @@ INSERT INTO Purposes(Name,Description) VALUES
 ('Za jivotni','Samo malki jivotni kravi ne!')
 
 INSERT INTO Shops(StartHour,EndHour,AddressId,PurposeId,Name) VALUES
-(8,20,1,7,'ZooMag 75 Eood'),
-(7,22,3,6,'Mambo'),
-(10,23,2,5,'Generala'),
-(6,16,1,4,'Golqmata baklava')
+(8,20,1,4,'ZooMag 75 Eood'),
+(7,22,3,3,'Mambo'),
+(10,23,2,2,'Generala'),
+(6,16,1,1,'Golqmata baklava')
 
 INSERT INTO PeopleShops(ShopId,PersonId) VALUES
-(2,'H43S'),
+(3,'H43S'),
 (4,'H43S'),
 (4,'1212'),
-(3,'9753'),
-(3,'8743')
+(5,'9753'),
+(6,'8743')
 
 --ALTER TABLE Shops 
 --ADD Name VARCHAR(16) NOT NULL
@@ -88,7 +88,9 @@ SELECT * FROM Shops
 SELECT * FROM PeopleShops
 
 
-SELECT p.Name AS FullName,s.Name as Visited,pur.Description FROM People as p
+SELECT TOP(3)
+p.Email AS [Имейл],p.Name AS [Имена],s.Name as Visited,pur.Description AS [Дейност] 
+FROM People as p
 JOIN PeopleShops as ps
 ON p.EGN=ps.PersonId
 JOIN Shops as s
@@ -97,5 +99,7 @@ JOIN Addresses AS a
 ON a.Id=s.AddressId
 JOIN Purposes as pur
 ON pur.Id=s.PurposeId
-WHERE Name LIKE '%ova'
+WHERE p.Name LIKE '%ova'
+
+
 DROP DATABASE Relation
