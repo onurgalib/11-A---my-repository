@@ -1,0 +1,19 @@
+div.images{
+    background-color: antiquewhite;
+    padding:1rem;
+}
+
+div.images>img{
+    width: 16rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+div.images>img:nth-child(even){
+    border-radius: 8rem;
+    border:5px solid darkgreen;
+}
+
+mark{
+    background-color: rgb(0, 255, 123);
+}

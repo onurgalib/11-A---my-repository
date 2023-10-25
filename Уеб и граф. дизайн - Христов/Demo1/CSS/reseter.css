@@ -1,0 +1,7 @@
+div,span,p,body,li,ul,ol,nav,footer,header,header,
+h1,h2,h3,h4,h5,h6,main{
+    box-sizing: inherit;
+    font:inherit;
+    padding:0;
+    margin:0
+}
