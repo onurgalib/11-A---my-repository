@@ -26,12 +26,6 @@
         public virtual Purpose Purpose { get; set; }
     public virtual IList<PersonShop> ShopPeople { get; set; }
     }
-    public class Purpose
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public virtual IList<Shop> Shops { get; set; }
 
-    }
+
 }
