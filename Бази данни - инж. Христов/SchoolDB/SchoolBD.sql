@@ -11,7 +11,7 @@ GSM NVARCHAR(16),
 Email NVARCHAR(32),
 Address NVARCHAR(64),
 Age int NOT NULL,
-Gender bit NOT NULL
+Gender int NOT NULL
 )
 GO
 CREATE TABLE Teachers(
@@ -47,6 +47,8 @@ FOREIGN KEY REFERENCES Speciality(Id)
 )
 
 
+
+
 DROP TABLE Students
 DROP TABLE Teachers
 DROP TABLE Speciality
@@ -73,8 +75,8 @@ INSERT INTO Teachers (Id,FirstName,LastName,Gender,Email,Subjects,ManagedClassID
 (3, 'Tatyana','Sarmova',0,'sarmova.tatyana@pgmett.com', 'English', 11)
 
 INSERT INTO Classes (Id, Grade,GradeLetter,SpecialityId) VALUES	
-(1, 11, A, 'PROGRAMMER')
-(2, 11, B, 'ELECTRICIAN')
+(1, 11, 'A', 'PROGRAMMER')
+(2, 11, 'B', 'ELECTRICIAN')
 
 INSERT INTO Speciality(Id, Name, Description,GraduatesTitle,StartGrade,EndGrade) VALUES
 (1, 'PROGRAMMER' ,'V tazi specialnost se 
