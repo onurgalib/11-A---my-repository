@@ -86,13 +86,13 @@ div.info>ul,div.info>p{
 div.info>ul{
 list-style: none;
 margin: 1rem,0;
-display: flex;
 }
+
 div.info>ul>li*{
     display: inline-block;
 }
 div.info>ul>li span{
-    display-block;
+    display:block;
     font-weight: 700;
 }
 div.info>ul>li>img{
@@ -100,3 +100,9 @@ div.info>ul>li>img{
     height: auto;
     margin-right: 1em;
 }
+
+div.info>ul>li{
+
+display: flex;
+}
+
