@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+div,span,p,body,li,ul,ol,nav,footer,header,header,
+h1,h2,h3,h4,h5,h6,main{
+    box-sizing: inherit;
+    font:inherit;
+    padding:0;
+    margin:0
+
+}
+h1,h4{
+    text-align: center;
+    font-weight: 700;
+}
+h1{
+    font-weight: 700;
+}
+
+div.main {
+    max-width: 72rem;
+    margin: 0 auto;
+    min-width: 25rem;
+}
+
+span.sinyo{
+    color: #327DC8;
+}
+div.header
+{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+div.content>ul{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+div.content>ul>li
+{
+    list-style: none;
+    margin: 1rem 1rem;
+    display: flex;
+    max-width: 25rem;
+    background-color: #819DAF;
+
+        flex-direction:  column ;
+border-radius: 1rem;
+padding-bottom: 5rem;
+
+
+}
+div.content>ul>li>div
+{
+    display: inline-block;
+}
+div.content>ul>li span
+{
+    display: block;
+    font-weight: 700;
+}
+div.content>ul>li>div>h5
+{
+    font-size: 165%;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+div.content>ul>li>div>img
+{
+    width: 25em;
+    height: auto;
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
+div.content>p
+{
+    margin-bottom: 2em;
+    margin-top: 1em;
+    font-weight: 300;
+}
