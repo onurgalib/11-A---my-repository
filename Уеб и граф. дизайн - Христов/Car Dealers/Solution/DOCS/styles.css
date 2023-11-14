@@ -145,3 +145,10 @@ div.info>ul>li>img{
     height: auto;
     margin-right:1em;
 }
+
+.fa-facebook-square:hover{
+    color:green!important;
+font-size:2em;
+}
+
+
