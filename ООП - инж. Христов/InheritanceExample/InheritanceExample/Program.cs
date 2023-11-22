@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace InheritanceExample
 {
-// Абстрактен клас Furniture
+// Абстрактен клас Furniture=
 public abstract class Furniture
     {
         public string Name { get; set; }
