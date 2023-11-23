@@ -4,7 +4,11 @@ using System.Collections.Generic;
 
 namespace InheritanceExample
 {
+<<<<<<< HEAD
 // Абстрактен клас Furniture
+=======
+// Абстрактен клас Furniture=
+>>>>>>> cc1eb044a9706d0749230334a7a350cd6544c4fd
 public abstract class Furniture
     {
         public string Name { get; set; }
@@ -141,14 +145,24 @@ public abstract class Furniture
     public class DuplicatingProductException : ApplicationException
     {
         public DuplicatingProductException(string message) : base(message)
+<<<<<<< HEAD
         {        }
+=======
+        {
+        }
+>>>>>>> cc1eb044a9706d0749230334a7a350cd6544c4fd
     }
 
     // Изключение за липсващ продукт
     public class NotFoundProductException : ApplicationException
     {
         public NotFoundProductException(string message) : base(message)
+<<<<<<< HEAD
         {        }
+=======
+        {
+        }
+>>>>>>> cc1eb044a9706d0749230334a7a350cd6544c4fd
     }
 
     class Program
