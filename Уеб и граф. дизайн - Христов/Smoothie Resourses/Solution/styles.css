@@ -1,0 +1,45 @@
+main {
+    background-image: url(../image/image1.png);
+    max-width: 50em;
+    margin: 2em auto;
+    border: 1px solid black;
+    display: flex;
+    padding: 1em;
+}
+
+div.content,
+div.image {
+    min-width: 50%;
+
+}
+div.content{
+    padding-right: 1em;
+}
+
+div.image>img{
+    width: 100%;
+    height: auto;
+}
+div.line{
+    border: 1px dotted green;
+}
+div.header>h4{
+    text-align: center;
+    font-weight: 700;
+}
+
+div.header>ul{
+   list-style-type:none;
+   display: flex;
+   justify-content: space-between;
+   font-style: italic;
+}
+ul.things
+{
+    margin: 1.5em 0;
+    list-style-type: none;
+}
+span.green-bold{
+    color:darkgreen;
+    font-weight:700;
+}
