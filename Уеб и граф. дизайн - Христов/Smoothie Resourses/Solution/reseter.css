@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,700&display=swap');
 
 html {
     font-family: 'PT Serif', serif;
     font-size: 16px;
     line-height: 1.4;
-    font-family: "lato";
     box-sizing: border-box;
 }
 
@@ -28,30 +27,24 @@ h6,
 main {
     box-sizing: inherit;
     font: inherit;
-    margin: 0;
     padding: 0;
+    margin: 0
 }
-
 h6 {
     font-size: 1.2rem;
 }
-
 h5 {
     font-size: 1.3rem;
 }
-
 h4 {
     font-size: 1.5rem;
 }
-
 h3 {
     font-size: 1.8rem;
 }
-
 h2 {
     font-size: 2.4rem;
 }
-
 h1 {
     font-size: 3.0em;
 }

@@ -1,8 +1,8 @@
 main {
-    background-image: url(../image/image1.png);
     max-width: 50em;
     margin: 2em auto;
-    border: 1px solid black;
+    background-image: url(../image/image1.png);
+    box-shadow: 1px 0px 15px 3px black;
     display: flex;
     padding: 1em;
 }
@@ -12,34 +12,54 @@ div.image {
     min-width: 50%;
 
 }
-div.content{
+
+div.content {
     padding-right: 1em;
 }
 
-div.image>img{
+div.image>img {
     width: 100%;
     height: auto;
 }
-div.line{
+
+div.line {
     border: 1px dotted green;
+    margin-bottom:0.25em;
 }
-div.header>h4{
+
+div.header>h4 {
     text-align: center;
     font-weight: 700;
 }
 
-div.header>ul{
-   list-style-type:none;
-   display: flex;
-   justify-content: space-between;
-   font-style: italic;
+div.header>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    font-weight: 400;
 }
-ul.things
-{
+
+ul.things {
     margin: 1.5em 0;
     list-style-type: none;
 }
-span.green-bold{
-    color:darkgreen;
-    font-weight:700;
+
+span.green-bold {
+    color: darkgreen;
+    font-weight: 700;
 }
+table.data-table{
+    width:100%;
+    margin-top: 1.3em;
+}
+table.data-table,
+table.data-table td,
+table.data-table th {
+    font-size:0.9em;
+    border: 1px solid green;
+    border-collapse: collapse;
+    text-align: center;
+  
+}
+
