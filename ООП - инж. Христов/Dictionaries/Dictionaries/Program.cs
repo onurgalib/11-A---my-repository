@@ -4,12 +4,20 @@
     {
         static void Main(string[] args)
         {
-            //Person[] peopleArr = new Person[]
-            //    {
-            //    new Person("Ivan",14), 
-            //    new Person("Hristian",13), 
-            //    new Person ("Tolga", 17)
-            //};
+            Person[] peopleArr = new Person[]
+                {
+                new Person("Ivan",14),
+                new Person("Hristian",13),
+                new Person ("Tolga", 17)
+            };
+
+            peopleArr=peopleArr
+                .Where(p=>p.Age>5)
+                .Where(p=>p.Name.StartsWith('K'))
+                .OrderBy(x => x.Age)
+                .ToArray();
+
+
             //List<Person> peopleList = new List <Person>
             //{ 
             //    new Person ("Ivan",14),
