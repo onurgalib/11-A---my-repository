@@ -11,6 +11,8 @@
                 .Select(strArr=>new Dog(strArr[1], int.Parse(strArr[2]), Enum.Parse<Breed>(strArr[0])
                 ))
                 .ToList();
+           // "D-Spiner-15 years"
+            List<string> names = dogs.OrderBy(d => d.Age).Select(d => $"{d.Breed.ToString()[0]}-{d.Name}-{d.Age} years").ToList();
             while (true)
             {
             Console.WriteLine("Please select dog breed:");
