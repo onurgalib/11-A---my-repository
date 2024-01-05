@@ -1,0 +1,14 @@
+Email:msvczxuhlpguipcden@tmmcv.com
+User:room27a
+PWD:PwD227a$#
+
+ConnectionString:workstation id=GringotsDB.mssql.somee.com;packet size=4096;user id=room27a_SQLLogin_1;pwd=manmejkrmz;data source=GringotsDB.mssql.somee.com;persist security info=False;initial catalog=GringotsDB 
+
+DBName:GringotsDB
+ServerName:GringotsDB.mssql.somee.com
+LoginName:room27a_SQLLogin_1
+LoginPWD:manmejkrmz
+
+
+select * from sys.tables
+
