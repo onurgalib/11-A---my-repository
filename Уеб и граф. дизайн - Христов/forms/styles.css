@@ -1,6 +1,6 @@
 
 html {
-    /*font-family: 'Lato', sans-serif;*/
+    /* font-family: 'Lato', sans-serif; */
     font-size: 16px;
     line-height: 1.4;
     box-sizing: border-box;
@@ -54,37 +54,45 @@ h1 {
     font-size: 3.0em;
 }
 
-body{
-max-width: 50rem;
-margin: 1em auto;
-background-color: bisque;
-border:1px solid black ;
+body {
+   max-width:50rem;
+   margin: 1em auto;
+   background-color: bisque;
+   border:1px solid black;
 }
-h3.title
-{
+
+
+h3.title{
     text-align: center;
 }
+
 main.content{
     display: flex;
-    width: 80%;
-    margin: 0 auto;
+    width:80%;
+    margin:0 auto;
     background-color: aquamarine;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 section.pictures,section.video{
-    max-width: 45%;
+    max-width:45%;
 }
-section.cartichki{
-    margin: 0 auto;
+
+section.cards{
+    margin:0 auto;
     flex-grow:1;
-    max-width: 90%;
-    min-width: 30em;
+    max-width:90% ;
+    min-width:30em;
     flex-shrink:0;
-    display: flex;
-    flex-wrap: wrap;
+    display:flex;
+    flex-wrap:wrap;
     justify-content: space-evenly;
 }
+
 div.card{
-    margin-top: 1.6em;
+    margin-top:1.6em;    
+}
+div.locs{
+    display:flex;
+    justify-content: space-between;
 }
