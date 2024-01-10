@@ -70,7 +70,21 @@ main.content{
     margin: 0 auto;
     background-color: aquamarine;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-main.content>section{
+section.pictures,section.video{
     max-width: 45%;
+}
+section.cartichki{
+    margin: 0 auto;
+    flex-grow:1;
+    max-width: 90%;
+    min-width: 30em;
+    flex-shrink:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+div.card{
+    margin-top: 1.6em;
 }
