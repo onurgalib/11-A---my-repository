@@ -1,0 +1,41 @@
+
+body {
+    max-width:50rem;
+    margin: 1em auto;
+    background-color: bisque;
+    border:1px solid black;
+ }
+ main.content{
+     display: flex;
+     width:80%;
+     margin:0 auto;
+     background-color: aquamarine;
+     justify-content: space-between;
+     flex-wrap:wrap;
+    }
+    h3.title{
+        text-align: center;
+    }
+    
+    section.pictures,section.video{
+     max-width:45%;
+ }
+ 
+ section.cards{
+     margin:0 auto;
+     flex-grow:1;
+     max-width:90% ;
+     min-width:30em;
+     flex-shrink:0;
+     display:flex;
+     flex-wrap:wrap;
+     justify-content: space-evenly;
+ }
+ 
+ div.card{
+     margin-top:1.6em;    
+ }
+ div.locs{
+     display:flex;
+     justify-content: space-between;
+ }

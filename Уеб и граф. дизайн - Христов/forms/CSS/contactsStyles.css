@@ -1,0 +1,14 @@
+body {
+    max-width:50rem;
+    margin: 1em auto;
+    background-color: bisque;
+    border:1px solid black;
+ }
+ main.content{
+     display: flex;
+     width:80%;
+     margin:0 auto;
+     background-color: aquamarine;
+     justify-content: space-between;
+     flex-wrap:wrap;
+    }
