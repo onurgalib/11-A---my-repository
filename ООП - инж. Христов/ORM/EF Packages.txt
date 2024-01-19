@@ -1,0 +1,24 @@
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+
+"Server=localhost\SQLEXPRESS;Database=11ADB;Trusted_Connection=True;"
+
+Packages:
+=========
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer -v 6.0.26
+dotnet add package Microsoft.EntityFrameworkCore.Design -v 6.0.26
+dotnet add package Microsoft.EntityFrameworkCore.Tools -v 6.0.26
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer -v 6.0.26
+
+
+
+add-migration init
+update-database
+
+
+Scaffold-DbContext "Server=DESKTOP-H86OA8E\SQLEXPRESS;Database=Geography;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
